@@ -1,0 +1,224 @@
+/* General Container Styling */
+.company {
+  text-align: center;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Image Styling */
+.main-img {
+  background-color: #ddd;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 20px;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Title Styling */
+.company h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Paragraph Styling */
+.company p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.7;
+  margin: 0 auto 30px;
+  text-align: justify;
+  max-width: 90%;
+}
+
+/* Vision & Goal Section */
+.vision-goal-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+/* Responsive Styles */
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .company {
+    padding: 50px;
+  }
+
+  .main-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Laptops & Tablets */
+@media (max-width: 1024px) {
+  .main-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .company h2 {
+    font-size: 1.6rem;
+  }
+
+  .company p {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets & Small Laptops */
+@media (max-width: 768px) {
+  .company {
+    padding: 30px;
+  }
+
+  .main-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .company h2 {
+    font-size: 1.4rem;
+  }
+
+  .company p {
+    font-size: 1rem;
+  }
+
+  .vision-goal-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .company {
+    padding: 20px;
+  }
+
+  .main-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .company h2 {
+    font-size: 1.2rem;
+  }
+
+  .company p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Very Small Screens (100px - 320px) */
+@media (max-width: 320px) {
+  .company {
+    padding: 15px;
+  }
+
+  .main-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .company h2 {
+    font-size: 1rem;
+  }
+
+  .company p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .card {
+    padding: 10px;
+  }
+}
+
+/* Ultra-Small Screens (100px - 200px) */
+@media (max-width: 200px) {
+  .company {
+    padding: 10px;
+  }
+
+  .main-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .company h2 {
+    font-size: 0.8rem;
+  }
+
+  .company p {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+
+  .card {
+    padding: 8px;
+  }
+}
+
+/* Extreme Small Screens (below 100px) */
+@media (max-width: 100px) {
+  .company {
+    padding: 5px;
+  }
+
+  .main-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .company h2 {
+    font-size: 0.6rem;
+  }
+
+  .company p {
+    font-size: 0.6rem;
+    line-height: 1.3;
+  }
+
+  .card {
+    padding: 5px;
+  }
+}

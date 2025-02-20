@@ -1,0 +1,130 @@
+/* General styles */
+body{
+  margin:0;
+  padding-top: 56px; /* Add space for the fixed navbar */
+}
+
+.main {
+  position: relative;
+  width: 100%;
+}
+
+.nav {
+background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+
+}
+
+.nav h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a{
+padding: 3px;
+border-radius: 4px;
+}
+
+.nav-links a:hover{
+background-color: rgb(200, 196, 196);
+}
+
+
+
+/* Hide menu icon by default */
+.mobile-menu {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Sidebar menu */
+.full {
+  height: 100vh;
+  width: 40%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  right: 0;
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.full h4 a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.full i {
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none; /* Hide links for smaller screens */
+  }
+
+  .mobile-menu {
+    display: block; /* Show menu icon on tablets & smaller */
+  }
+
+  .full {
+    width: 50%; /* Adjust sidebar width on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .full {
+    width: 60%; /* Wider sidebar on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .full {
+    width: 70%; /* Full-screen menu for small phones */
+    padding: 120px 40px;
+  }
+
+  .full h4 a {
+    font-size: 20px; /* Adjust text size */
+  }
+
+  .nav h2 {
+    font-size: 20px; /* Reduce logo size */
+  }
+}
+
+
+
+

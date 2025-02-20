@@ -1,0 +1,211 @@
+/* General Styles */
+.address-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.address-wrapper:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Address Section */
+.address-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.address-box {
+    flex: 1 1 30%;
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #f2f2f2);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.address-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.address-box h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #222;
+}
+
+.address-box p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Icon Styling */
+.icon {
+    color: #007bff;
+    margin-right: 8px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+/* Adjust icons inside the address box */
+.address-box h3 .icon {
+    font-size: 22px;
+    color: #ff5733;
+}
+
+.address-box p .icon {
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Query Form */
+.query-form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.query-form:hover {
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.query-form h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+.query-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.query-form input,
+.query-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.query-form input:focus,
+.query-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+}
+
+.query-form button {
+    padding: 12px;
+    background: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.query-form button:hover {
+    background: #0056b3;
+}
+
+/* ✅ Fully Responsive Design */
+@media (max-width: 1024px) {
+    .address-container {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .address-box {
+        flex: 1 1 45%;
+    }
+
+    .query-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .address-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .address-box {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .query-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .address-wrapper {
+        background-color: pink;
+        padding: 15px;
+    }
+
+    .query-form {
+        padding: 15px;
+    }
+
+    .address-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .address-box {
+        width: 100%;
+        max-width: 350px; /* Ensures it doesn't become too wide on larger mobile screens */
+        padding: 12px;
+        text-align: center;
+    }
+
+    .address-box h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .address-box p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .query-form h3 {
+        font-size: 18px;
+    }
+
+    .query-form input,
+    .query-form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .query-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

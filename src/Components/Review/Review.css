@@ -1,0 +1,119 @@
+.review-container {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    padding: 20px;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  }
+  
+  /* Review Card Styling */
+  .review-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    min-width: 300px;
+    max-width: 400px;
+    flex: 1; /* Makes cards flexible */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideIn 0.5s forwards;
+  }
+  
+  /* Hover Effect */
+  .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Review Header */
+  .review-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .review-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+  }
+  
+  .review-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Rating Stars */
+  .rating {
+    font-size: 16px;
+    color: #f4b400;
+    margin: 0;
+  }
+  
+  /* Slide-in Animation */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets (768px - 1024px) */
+  @media (max-width: 1024px) {
+    .review-container {
+      justify-content: center;
+    }
+  
+    .review-card {
+      min-width: 250px;
+      max-width: 350px;
+    }
+  }
+  
+  /* Mobile Phones (480px - 768px) */
+  @media (max-width: 768px) {
+    .review-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .review-card {
+      min-width: 90%;
+      max-width: 95%;
+    }
+  }
+  
+  /* Small Phones (up to 480px) */
+  @media (max-width: 480px) {
+    .review-card {
+      min-width: 100%;
+      padding: 15px;
+    }
+  
+    .review-photo {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .review-text {
+      font-size: 13px;
+    }
+  
+    .rating {
+      font-size: 14px;
+    }
+  }
+  
