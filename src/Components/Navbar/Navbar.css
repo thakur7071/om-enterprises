@@ -10,7 +10,7 @@ body{
 }
 
 .nav {
-background-color: beige;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,13 +20,13 @@ background-color: beige;
   left: 0;
   right: 0;
   z-index: 999;
-
-
+  box-shadow: 0px 4px 10px rgba(0, 0, 0,0.6); /* Subtle shadow effect */
 }
 
-.nav h2 {
-  margin: 0;
-  font-size: 22px;
+
+.main-logo{
+  width: 100px;
+
 }
 
 .nav-links {
@@ -42,11 +42,10 @@ background-color: beige;
 .nav-links a{
 padding: 3px;
 border-radius: 4px;
+
 }
 
-.nav-links a:hover{
-background-color: rgb(200, 196, 196);
-}
+
 
 
 
@@ -55,6 +54,7 @@ background-color: rgb(200, 196, 196);
   font-size: 24px;
   cursor: pointer;
   display: none;
+  
 }
 
 /* Sidebar menu */

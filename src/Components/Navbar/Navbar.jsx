@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import gsap from "gsap";
 import "./Navbar.css";
 import "remixicon/fonts/remixicon.css";
+import main from '../../Components/Assets/main-img-removebg-preview.png'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +32,8 @@ const Navbar = () => {
   return (
     <div className="main">
       <div className="nav">
-        <h2>OM-ENTERPRISES</h2>
+      <img src={main} alt="Main Logo" className="main-logo" />
+
         <i className="ri-menu-3-line mobile-menu" onClick={() => setIsMenuOpen(true)}></i>
 
         <div className="nav-links">
