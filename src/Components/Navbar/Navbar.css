@@ -40,10 +40,21 @@ body{
 }
 
 .nav-links a{
-padding: 3px;
+padding: 10px;
 border-radius: 4px;
 
 }
+
+.contact-button {
+
+  background: linear-gradient(135deg, #e11d48, #f43f5e);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
 
 
 
@@ -102,12 +113,24 @@ border-radius: 4px;
   .full {
     width: 50%; /* Adjust sidebar width on tablets */
   }
+  .full h4 a {
+    font-size: 20px; /* Adjust text size */
+    padding: 10px;
+  }
+
 }
 
 @media (max-width: 768px) {
   .full {
     width: 60%; /* Wider sidebar on smaller screens */
   }
+  .full h4 a {
+    font-size: 20px; /* Adjust text size */
+    padding: 10px;
+  }
+
+
+ 
 }
 
 @media (max-width: 480px) {

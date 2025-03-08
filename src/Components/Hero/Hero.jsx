@@ -27,7 +27,7 @@ function Hero() {
     <section className="hero" ref={heroRef}>
       <div className="hero-overlay"></div>
       <div className="hero-content" ref={contentRef}>
-        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>OM ENTERPRISES</h1>
         <p>
           At <strong>OM-ENTERPRISES</strong>, we specialize in crafting sophisticated interiors that seamlessly blend 
           functionality with aesthetics. Our expert craftsmanship
