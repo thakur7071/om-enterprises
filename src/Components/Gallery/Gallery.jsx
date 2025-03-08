@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./gallery.css";
+import "./Gallery.css";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
