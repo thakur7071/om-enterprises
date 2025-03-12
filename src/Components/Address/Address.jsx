@@ -1,6 +1,6 @@
 import React from "react";
 import { Toaster, toast } from "react-hot-toast";
-import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope, FaUser, FaComment } from "react-icons/fa";
 import "./Address.css"; // Add CSS for styling
 
 const Address = () => {
@@ -25,19 +25,23 @@ const Address = () => {
       <Toaster />
 
       {/* Address Section */}
+      <div className="address-heading">
+        <h2>Address & Query</h2>
+      </div>
+
       <div className="address-container">
         <div className="address-box">
           <h3><FaMapMarkerAlt className="icon" /> Head Office</h3>
-          <p>123 Main Street</p>
-          <p>New York, NY 10001</p>
-          <p><FaEnvelope className="icon" /> info@company.com</p>
+          <p>B-22, Sharda Complex CHS Ltd</p>
+          <p>Birwadi, Mahad-Raigad 402302</p>
+          <p><FaEnvelope className="icon" /> omenterprisesvip@gmail.com</p>
         </div>
 
         <div className="address-box">
           <h3><FaMapMarkerAlt className="icon" /> Branch Office</h3>
-          <p>456 Elm Street</p>
-          <p>Los Angeles, CA 90001</p>
-          <p><FaEnvelope className="icon" /> branch@company.com</p>
+          <p>B-22, Mishra Lane, Narsipada, Akruti Road</p>
+          <p>Kandivili(E), Mumbai 400101</p>
+          <p><FaEnvelope className="icon" /> omenterprisesvip@gmail.com</p>
         </div>
       </div>
 
@@ -46,14 +50,19 @@ const Address = () => {
         <h3>Query</h3>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
+            <FaUser className="input-icon" />
             <input type="text" placeholder="Your Name" required />
           </div>
 
           <div className="input-group">
+            <FaEnvelope className="input-icon" />
             <input type="email" placeholder="Your Email" required />
           </div>
 
-          <textarea placeholder="Your Message" rows="4" required></textarea>
+          <div className="input-group textarea-group">
+            <FaComment className="input-icon" />
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+          </div>
 
           <button type="submit">Submit</button>
         </form>

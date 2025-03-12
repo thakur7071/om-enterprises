@@ -1,5 +1,7 @@
 /* Hero Section */
 .hero {
+  margin: 60px auto;
+  max-width: 1600px;
   position: relative;
   width: 100%;
   height: 100vh;

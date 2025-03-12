@@ -1,7 +1,13 @@
-import "./About.css";
-import img10 from '../Assets/img10.jpg'
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./About.css";
+import img10 from '../Assets/img10.jpg';
+
 const About = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <section className="about">
       <div className="about-container">
@@ -20,7 +26,7 @@ const About = () => {
             From residential makeovers to commercial transformations, we take pride in delivering 
             exceptional results that leave a lasting impression. Let us bring your dream space to life.
           </p>
-          <Link to="/company" className="btn">Read More</Link> 
+          <Link to="/company" className="btn" onClick={scrollToTop}>Read More</Link> 
         </div>
       </div>
     </section>

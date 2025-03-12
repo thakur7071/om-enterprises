@@ -1,9 +1,8 @@
 /* General Styles */
 .address-wrapper {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 25px;
-    background: #ffffff;
     border-radius: 12px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.3s ease-in-out;
@@ -12,6 +11,13 @@
 .address-wrapper:hover {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
 }
+
+.address-heading {
+    text-align: center; /* Centers text */
+    width: 100%; /* Ensures it spans full width */
+    margin: 20px 0; /* Adds spacing */
+  }
+  
 
 /* Address Section */
 .address-container {
@@ -98,6 +104,7 @@
 
 .query-form input,
 .query-form textarea {
+    font-family: "Josefin Sans", sans-serif;
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
@@ -108,7 +115,7 @@
 
 .query-form input:focus,
 .query-form textarea:focus {
-    border-color: #007bff;
+    border-color: grey;
     outline: none;
     box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
 }
@@ -125,9 +132,7 @@
     transition: all 0.3s ease;
 }
 
-.query-form button:hover {
-    background: #0056b3;
-}
+
 
 /* ✅ Fully Responsive Design */
 @media (max-width: 1024px) {
@@ -140,10 +145,7 @@
         flex: 1 1 45%;
     }
 
-    .query-form {
-        max-width: 600px;
-        margin: 0 auto;
-    }
+
 }
 
 @media (max-width: 768px) {
@@ -157,9 +159,7 @@
         max-width: 400px;
     }
 
-    .query-form {
-        width: 90%;
-    }
+   
 }
 
 @media (max-width: 480px) {
@@ -209,3 +209,38 @@
         padding: 8px;
     }
 }
+
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group .input-icon {
+    position: absolute;
+    left: 10px;
+    color: #666;
+  }
+  
+  .input-group input,
+  .textarea-group textarea {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Adjust padding to avoid overlap */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .textarea-group {
+    position: relative;
+  }
+  
+  .textarea-group .input-icon {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #666;
+  }
+  
+
+  
