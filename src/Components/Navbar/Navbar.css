@@ -25,6 +25,7 @@ body{
 
 
 .main-logo{
+  margin-top: 10px;
   width: 100px;
 
 }
@@ -136,6 +137,7 @@ border-radius: 4px;
 
 @media (max-width: 480px) {
   .main-logo{
+   
     width: 70px;
   }
   .full {
