@@ -5,6 +5,11 @@ import "./Navbar.css";
 import "remixicon/fonts/remixicon.css";
 import main from '../../Components/Assets/main-img-removebg-preview.png';
 
+// Function to smoothly scroll to the top
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
@@ -31,7 +36,9 @@ const Navbar = () => {
   return (
     <div className="main">
       <div className="nav">
-        <img src={main} alt="Main Logo" className="main-logo" />
+        <Link to="/" onClick={scrollToTop}>
+          <img src={main} alt="Main Logo" className="main-logo" />
+        </Link>
         <i className="ri-menu-3-line mobile-menu" onClick={() => setIsMenuOpen(true)}></i>
 
         <div className="nav-links">
