@@ -8,6 +8,10 @@ const reviews = [
 
 const Review = () => {
   return (
+    <>
+    <div className="review-heading">
+      <h2>Feedback</h2>
+    </div>
     <div className="review-container">
       {reviews.map((review) => (
         <div key={review.name} className="review-card">
@@ -22,6 +26,7 @@ const Review = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 
