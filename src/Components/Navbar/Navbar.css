@@ -58,8 +58,6 @@ border-radius: 4px;
 
 
 
-
-
 /* Hide menu icon by default */
 .mobile-menu {
   font-size: 24px;
@@ -102,6 +100,9 @@ border-radius: 4px;
 
 /* ✅ Responsive Design */
 @media (max-width: 1024px) {
+  .main-logo{
+    width: 90px;
+  }
   .nav-links {
     display: none; /* Hide links for smaller screens */
   }
@@ -134,6 +135,9 @@ border-radius: 4px;
 }
 
 @media (max-width: 480px) {
+  .main-logo{
+    width: 70px;
+  }
   .full {
     width: 70%; /* Full-screen menu for small phones */
     padding: 120px 40px;
