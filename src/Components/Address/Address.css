@@ -149,17 +149,12 @@
 }
 
 @media (max-width: 768px) {
-    .address-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
+ 
     .address-box {
         width: 100%;
         max-width: 400px;
     }
 
-   
 }
 
 @media (max-width: 480px) {
