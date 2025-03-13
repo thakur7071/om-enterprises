@@ -1,5 +1,5 @@
 import './Company.css';
-import main from '../Assets/mdimg.jpg';
+import main from '../Assets/companymain.jpg';
 
 const Company = () => {
   return (
