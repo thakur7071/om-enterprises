@@ -3,9 +3,9 @@
   max-width: 1600px;
   margin: 110px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 5vw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 4vw;
   background-color: #f9f9f9;
   text-align: center;
 }
@@ -80,10 +80,7 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .service-container {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    padding: 4vw;
-  }
+
 
   .service-image {
     height: 160px;
@@ -100,9 +97,10 @@
 
 @media (max-width: 768px) {
   .service-container {
-    padding: 3vw;
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 4vw;
   }
+
 
   .service-card {
     border-radius: 8px;

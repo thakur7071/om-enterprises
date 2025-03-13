@@ -41,7 +41,7 @@ const Service = () => {
               className="query-button" 
               onClick={handleQueryClick} // Handle button click to open WhatsApp
             >
-              Query
+              Get In Touch
             </button>
           </div>
         </div>
