@@ -1,5 +1,7 @@
 /* Service Section */
 .service-container {
+  max-width: 1600px;
+  margin: 110px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -16,8 +18,12 @@
   transition: 0.3s ease-in-out;
   overflow: hidden;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This ensures the button is aligned properly */
 }
 
+/* Service Card Hover Effect */
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
@@ -28,25 +34,49 @@
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-bottom: 3px solid #007bff;
+  border-bottom: 3px solid #f43f5e;
 }
 
 /* Service Content */
 .service-content {
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns the content centrally */
+  justify-content: space-between; /* Ensures the button stays at the bottom */
 }
 
+/* Service Content Title */
 .service-content h3 {
   font-size: 1.2rem;
   color: #333;
   margin-bottom: 8px;
 }
 
+/* Service Content Text */
 .service-content p {
   font-size: 0.9rem;
   color: #555;
   line-height: 1.5;
+  margin-bottom: 10px; /* To provide space between the text and the button */
 }
+
+/* Query Button */
+.query-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f43f5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Makes the button take the full width of the card */
+  max-width: 200px; /* You can limit the button width if needed */
+  margin-left: auto;
+  margin-right: auto; /* Centers the button */
+}
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {

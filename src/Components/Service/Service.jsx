@@ -8,16 +8,27 @@ import img7 from '../Assets/img7.jpg';
 import './Service.css';
 
 const services = [
-  { id: 1, title: 'Interior Design', description: 'Transform your space with modern and elegant designs tailored to your style.', image: img1 },
-  { id: 2, title: 'Exterior Design', description: 'Make a lasting impression with high-quality exterior design solutions.', image: img2 },
-  { id: 3, title: 'Furniture Design', description: 'Custom furniture pieces to match your aesthetics and functionality.', image: img3 },
-  { id: 4, title: 'Landscape Design', description: 'Create beautiful and sustainable outdoor spaces.', image: img4 },
-  { id: 5, title: 'Aluminium Doors', description: 'Enhance productivity with ergonomic and stylish office spaces.', image: img5 },
-  { id: 6, title: 'Home Renovation', description: 'Revamp your home with our expert renovation services.', image: img6 },
-  { id: 7, title: '3D Modeling', description: 'Visualize your ideas with realistic 3D modeling services.', image: img7 }
+  { id: 1, title: 'Civil Contractors', description: 'Transform your space with modern and elegant designs tailored to your style.', image: img1 },
+  { id: 2, title: 'Aluminium Doors', description: 'Make a lasting impression with high-quality exterior design solutions.', image: img2 },
+  { id: 3, title: 'Windows', description: 'Custom furniture pieces to match your aesthetics and functionality.', image: img3 },
+  { id: 4, title: 'Partitions', description: 'Create beautiful and sustainable outdoor spaces.', image: img4 },
+  { id: 5, title: 'False Ceiling', description: 'Enhance productivity with ergonomic and stylish office spaces.', image: img5 },
+  { id: 6, title: 'Carpentry Jobs', description: 'Revamp your home with our expert renovation services.', image: img6 },
+  { id: 7, title: 'Paintings', description: 'Visualize your ideas with realistic 3D modeling services.', image: img7 },
+  { id: 8, title: 'Blinds', description: 'Visualize your ideas with realistic 3D modeling services.', image: img7 },
+  { id: 9, title: 'Flooring', description: 'Visualize your ideas with realistic 3D modeling services.', image: img7 },
+  { id: 10, title: 'P.U. Coating', description: 'Visualize your ideas with realistic 3D modeling services.', image: img7 }
 ];
 
+const whatsappNumber = '9422095123'; // Replace with your WhatsApp number
+const message = 'Hi, I have a query about your services.'; // Message you want to prefill
+
 const Service = () => {
+
+  const handleQueryClick = () => {
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
+  };
+
   return (
     <div className="service-container">
       {services.map((service) => (
@@ -26,6 +37,12 @@ const Service = () => {
           <div className="service-content">
             <h3>{service.title}</h3>
             <p>{service.description}</p>
+            <button 
+              className="query-button" 
+              onClick={handleQueryClick} // Handle button click to open WhatsApp
+            >
+              Query
+            </button>
           </div>
         </div>
       ))}
