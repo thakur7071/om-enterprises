@@ -1,74 +1,99 @@
 /* Contact Section */
+.contact-main {
+    max-width: 1600px;
+    margin: 90px auto;
+}
+
+.contact-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto -120px;
+    padding: 20px;
+}
+
+.contact-header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f43f5e;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
 .contact-us {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: url('../Assets/mainimg.jpg') no-repeat center center;
-    background-size: contain; /* Ensures the whole image fits */
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-}
-
-/* Adding a subtle dark overlay for better contrast */
-.contact-us::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(112, 111, 111, 0.3); /* Light overlay */
-    z-index: 1;
 }
 
 /* Contact form with glassmorphism effect */
 .contact {
     position: relative;
     z-index: 2;
-    background: rgba(255, 255, 255, 0.2); /* Transparent white */
-    backdrop-filter: blur(6px); /* Glassmorphism effect */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px #f43f5e;
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     gap: 18px;
-
 }
 
-
-.contact label {
-    font-weight: 600;
-  
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-.contact input,
-.contact textarea {
+/* Input Group for Icons */
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
     width: 100%;
-    padding: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    color: #f43f5e;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* Adjust for icon */
+    border: 1px solid #f43f5e;
     border-radius: 8px;
     font-size: 16px;
     background: rgba(255, 255, 255, 0.2);
- 
+    font-family: "Josefin Sans", sans-serif;
     outline: none;
     transition: all 0.3s ease-in-out;
 }
 
+/* Adjust textarea icon */
+.textarea-group {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
 
-
-
-
-
+.textarea-group .input-icon {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+}
 
 .contact button {
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    font-family: "Josefin Sans", sans-serif;
+    background: #f43f5e;
     color: #fff;
     padding: 14px;
     border: none;
@@ -81,9 +106,35 @@
 }
 
 .contact button:hover {
-    background: linear-gradient(135deg, #ff4b2b, #ff416c);
-    box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
     transform: scale(1.05);
+}
+
+/* Contact Details */
+.contact-details {
+    max-width: 1000px;
+    margin: -80px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+/* Each contact card */
+.contact-card {
+    flex: 1;
+    background: #fdfdfd;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px #f43f5e;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    min-width: 280px;
+}
+
+/* Hover effect */
+.contact-card:hover {
+    transform: translateY(-6px);
 }
 
 /* Responsive Design */
@@ -91,7 +142,9 @@
     .contact {
         max-width: 90%;
     }
-   
+    .contact-details {
+        max-width: 90%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -99,18 +152,12 @@
         padding: 25px;
         max-width: 85%;
     }
-
     .contact input,
     .contact textarea {
         font-size: 14px;
     }
-
     .contact button {
         font-size: 16px;
-    }
-
-    .contact-us {
-        background-size: 100% auto; /* Make it fit width-wise */
     }
 }
 
@@ -119,18 +166,15 @@
         padding: 20px;
         max-width: 95%;
     }
-
     .contact input,
     .contact textarea {
         font-size: 14px;
     }
-
     .contact button {
         font-size: 14px;
         padding: 12px;
     }
-
     .contact-us {
-        background-size: 120% auto; /* Slight zoom for better visibility */
+        background-size: 80% auto;
     }
 }
