@@ -112,7 +112,7 @@
 /* Contact Details */
 .contact-details {
     max-width: 1000px;
-    margin: -80px auto;
+    margin: -100px auto;
     display: flex;
     justify-content: space-between;
     gap: 20px;
