@@ -2,6 +2,16 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "./Gallery.css";
 
+// Import images
+import mainimg from "../../Components/Assets/mainimg.jpg";
+import img10 from "../../Components/Assets/img10.jpg";
+import img5 from "../../Components/Assets/img5.jpg";
+import img9 from "../../Components/Assets/img9.jpg";
+import img8 from "../../Components/Assets/img8.jpg";
+import img2 from "../../Components/Assets/img2.jpg";
+import img3 from "../../Components/Assets/img3.jpg";
+import img1 from "../../Components/Assets/img1.jpg";
+
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndices, setCurrentIndices] = useState({});
@@ -11,26 +21,26 @@ const Gallery = () => {
       title: "Project 1",
       description: "Description for Project 1 showcasing our work",
       images: [
-        "/src/Components/Assets/mainimg.jpg",
-        "/src/Components/Assets/img10.jpg",
-        "/src/Components/Assets/img5.jpg",
+        mainimg,
+        img10,
+        img5,
       ]
     },
     {
       title: "Project 2",
       description: "Description for Project 2 highlighting our expertise",
       images: [
-        "/src/Components/Assets/img9.jpg",
-        "/src/Components/Assets/img8.jpg",
-        "/src/Components/Assets/img2.jpg",
+        img9,
+        img8,
+        img2,
       ]
     },
     {
       title: "Project 3",
       description: "Description for Project 3 demonstrating our capabilities",
       images: [
-        "/src/Components/Assets/img3.jpg",
-        "/src/Components/Assets/img1.jpg",
+        img3,
+        img1,
       ]
     }
   ];
