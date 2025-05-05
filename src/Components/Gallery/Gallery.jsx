@@ -1,16 +1,10 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "./Gallery.css";
+import { img, img1, img10, img11, img12, img13, img2, img3, img4, img5, img6, img7, img8, img9 } from "../Assets";
 
-// Import images
-import mainimg from "../../Components/Assets/mainimg.jpg";
-import img10 from "../../Components/Assets/img10.jpg";
-import img5 from "../../Components/Assets/img5.jpg";
-import img9 from "../../Components/Assets/img9.jpg";
-import img8 from "../../Components/Assets/img8.jpg";
-import img2 from "../../Components/Assets/img2.jpg";
-import img3 from "../../Components/Assets/img3.jpg";
-import img1 from "../../Components/Assets/img1.jpg";
+
+
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -18,31 +12,14 @@ const Gallery = () => {
 
   const galleryItems = [
     {
-      title: "Project 1",
+      title: "Child CARE CENTRE",
       description: "Description for Project 1 showcasing our work",
       images: [
-        mainimg,
-        img10,
-        img5,
+      img,img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13
       ]
     },
-    {
-      title: "Project 2",
-      description: "Description for Project 2 highlighting our expertise",
-      images: [
-        img9,
-        img8,
-        img2,
-      ]
-    },
-    {
-      title: "Project 3",
-      description: "Description for Project 3 demonstrating our capabilities",
-      images: [
-        img3,
-        img1,
-      ]
-    }
+   
+    
   ];
 
   const handlePrevImage = (e, itemIndex) => {
