@@ -9,7 +9,8 @@
   align-items: center;
   justify-content: center;
   background: url("https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80") 
-  no-repeat center center/cover;
+    no-repeat center center / cover;
+  overflow: hidden; /* Prevent content from overflowing during animation */
 }
 
 /* Dark Overlay */
@@ -17,13 +18,14 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 /* Hero Content */
 .hero-content {
   position: relative;
-  max-width: 90%;
   max-width: 650px;
+  width: 90%;
   text-align: center;
   color: white;
   z-index: 2;
@@ -31,7 +33,7 @@
 }
 
 .hero-content h1 {
-  font-size: 3.0rem;
+  font-size: 3rem;
   font-weight: 900;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -86,7 +88,7 @@
 
 /* Responsive Styles */
 
-/* Medium Screens - Tablets (768px and above) */
+/* Tablets and small desktops */
 @media (max-width: 1024px) {
   .hero-content h1 {
     font-size: 2.8rem;
@@ -102,10 +104,10 @@
   }
 }
 
-/* Small Screens - Mobile (Below 768px) */
+/* Mobile devices */
 @media (max-width: 768px) {
   .hero {
-    height: 90vh; /* Adjusted height for smaller screens */
+    height: 90vh;
     padding: 40px 0;
   }
 
@@ -120,7 +122,7 @@
   }
 
   .hero-buttons {
-    flex-direction: column; /* Stack buttons on small screens */
+    flex-direction: column;
     gap: 10px;
   }
 
@@ -132,7 +134,7 @@
   }
 }
 
-/* Extra Small Screens (Below 480px) */
+/* Extra Small Devices */
 @media (max-width: 480px) {
   .hero {
     height: 85vh;

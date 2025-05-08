@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "./Gallery.css";
-import { img, img1, img10, img11, img12, img13, img2, img3, img4, img5, img6, img7, img8, img9 } from "../Assets";
+import { img, img1, img10, img11, img12, img13, img14, img15, img16, img17, img18, img2, img3, img4, img5, img6, img7, img8, img9 } from "../Assets";
 
 
 
@@ -18,6 +18,13 @@ const Gallery = () => {
       img,img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13
       ]
     },
+    {
+      title: "OFFICE PROJECT",
+      description: "Description for Project 1 showcasing our work",
+      images: [
+    img14,img15,img16,img17,img18
+      ]
+    }
    
     
   ];
